@@ -4,7 +4,7 @@ export const brand = {
     telegram: 'https://t.me/royalcasinox',
     signal: 'https://signal.group/#judyosborneX.17',
     x: 'https://x.com/yourhandle',
-    facebook: 'https://facebook.com/yourpage',
+    facebook: 'https://facebook.com/1BXxk4WzQu/',
     email: 'info@gamingcoinhub.com'
   };
   

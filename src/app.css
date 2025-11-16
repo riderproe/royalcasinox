@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+
+
+.card { @apply rounded-2xl border shadow-2xl backdrop-blur; border-color: rgba(255,215,0,0.2); background-color: rgba(24,24,27,0.8); }
+.btn { @apply inline-flex items-center justify-center rounded-xl px-5 py-2 font-bold shadow-lg transition-all duration-200; }
+.btn-primary { @apply text-[color:#18181b] bg-[color:#ffd700] hover:bg-[color:#fbbf24] hover:text-[color:#18181b]; }
+.btn-outline { @apply border text-[color:#ffd700]; border-color: #ffd700; }
+.btn-outline:hover { background-color: #ffd700; color: #18181b; }
+.link { @apply underline; color: #ffd700; }
+.link:hover { color: #fbbf24; }
+
+/* Casino accent utilities */
+.casino-border { @apply border-casinoGold; }
+.casino-bg { @apply bg-casinoGreen; }
+.casino-accent { @apply text-casinoAccent; }

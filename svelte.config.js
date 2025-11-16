@@ -1,23 +1,20 @@
 import adapter from '@sveltejs/adapter-netlify';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
-/** @type {import('@sveltejs/kit').Config} */
 const config = {
-	preprocess: vitePreprocess(),
+  preprocess: vitePreprocess(),
 
-	kit: {
-		adapter: adapter({
-			// optional — Netlify defaults
-			pages: 'build',
-			assets: 'build',
-			fallback: null
-		}),
-
-		prerender: {
-			crawl: true,
-			entries: ['*']
-		}
-	}
+  kit: {
+    adapter: adapter({
+      pages: 'build',
+      assets: 'build',
+      fallback: 'index.html' // <-- important for SPA-like routing
+    }),
+    prerender: {
+      crawl: false,
+      entries: []
+    }
+  }
 };
 
 export default config;
